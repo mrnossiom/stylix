@@ -116,7 +116,6 @@ mkTarget {
                   color: @base05;
               }
             ''
-            + (builtins.readFile ./base.css)
             + (
               if cfg.enableLeftBackColors then
                 (import ./colors.nix "left")
